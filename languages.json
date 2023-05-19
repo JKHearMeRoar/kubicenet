@@ -1,0 +1,121 @@
+{
+	"en": {
+		"layout": {
+			"cv": "CV",
+			"about": "About",
+			"portfolio": "Portfolio",
+			"contact": "Contact"
+		},
+		"homepage": {
+			"bio": "Bio",
+			"name": "Name",
+			"age": "Age",
+			"years": "years",
+			"location": "Location",
+			"prague": "Prague",
+			"languages": "Languages",
+			"english": "English",
+			"spanish": "Spanish",
+			"technology": "Technology",
+			"education": "Education",
+			"vse": "University of Economics, Prague",
+			"faculty": "Faculty of International Relations - Business & Law",
+			"grammarschool": "Grammar school",
+			"jobs": "Jobs",
+			"freelancer": {
+				"freelancer": "Freelancer: Front-end Developer",
+				"dev": "Web development",
+				"email": "Email coding"
+			},
+			"present": "present",
+			"specialization": "WordPress and HTML email template specialization",
+			"profile": "profile",
+			"smartselling": {
+				"smartselling": "SmartSelling",
+				"coding": "Coding responsive HTML email templates and campaigns",
+				"wordpress": "Setting up WordPress microsites and creating custom themes and plugins for WP",
+				"frontend": "Front-end web development & maintenance",
+				"techsupport": "Providing technical support for key clients",
+				"training": "Training junior colleagues in HTML and best practices in emails"
+			},
+			"coder": "Coder",
+			"conrad": {
+				"conrad": "Conrad Electronic",
+				"coding": "Coding & designing responsive HTML email campaigns",
+				"automation": "Setting up automated personalized campaigns",
+				"segmentation": "Customer segmentation",
+				"analysis": "Data analysis & reporting",
+				"quality": "Quality control",
+				"copy": "Copywriting",
+				"project": "Project management"
+			},
+			"marketing": "Email Marketing Specialist",
+			"ebay": {
+				"ebay": "eBay",
+				"developer": "Front-end Developer"
+			}
+		},
+		"about": {
+			"about": "About me"
+		}
+	},
+	"cs-CZ": {
+		"layout": {
+			"cv": "CV",
+			"about": "O mně",
+			"portfolio": "Portfolio",
+			"contact": "Kontakt"
+		},
+		"homepage": {
+			"bio": "Bio",
+			"name": "Jméno",
+			"age": "Věk",
+			"years": "let",
+			"location": "Bydliště",
+			"prague": "Praha",
+			"languages": "Jazyky",
+			"english": "Angličtina",
+			"spanish": "Španělština",
+			"technology": "Technologie",
+			"education": "Vzdělání",
+			"vse": "VŠE",
+			"faculty": "Fakulta mezinárodních vztahů - obor podnikání a právo",
+			"grammarschool": "Gymnázium",
+			"jobs": "Pracovní zkušenosti",
+			"freelancer": {
+				"freelancer": "Freelancer: Front-end Developer",
+				"dev": "Vývoj webů",
+				"email": "Kódování emailů"
+			},
+			"present": "současnost",
+			"specialization": "Specializace na WordPress a HTML emailové šablony",
+			"profile": "profil",
+			"smartselling": {
+				"smartselling": "SmartSelling",
+				"coding": "Kódování responzivních HTML email šablon a kampaní",
+				"wordpress": "Vytváření WordPress mikrosite a vývoj šablon a pluginů pro WP",
+				"frontend": "Front-end web vývoj & údržba",
+				"techsupport": "Technická podora pro klíčové klienty",
+				"training": "Vzdělávání juniorních kolegů v HTML a emailových Best practice"
+			},
+			"conrad": {
+				"conrad": "Conrad Electronic",
+				"coding": "Kódování & design responzivních HTML email kampaní",
+				"automation": "Vytváření automatických personalizovaných kampaní",
+				"segmentation": "Segmentace zákazníků",
+				"analysis": "Datová analýza & reportování",
+				"quality": "Kontrola kvality",
+				"copy": "Copywriting",
+				"project": "Řízení projektů"
+			},
+			"marketing": "Email Marketing Specialist",
+			"ebay": {
+				"ebay": "eBay",
+				"developer": "Front-end Developer"
+			}
+		},
+		"about": {
+			"about": "O mně"
+		}
+	}
+}
