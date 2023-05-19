@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="{{language %> %>">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+	<title>Jan Kubiče</title>
+</head>
+<body>
+	<div class="lang">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="flags">
+						<a href="/en/" class="english"><img src="/images/en.png" alt="EN" width="20" height="15"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div id="logo" class="col-xs-12 col-md-4">
+					<a href="#">
+						<img src="/images/jankubice.png" alt="Jan Kubiče" width="185" height="32">
+					</a>
+				</div>
+				<div id="menu" class="col-xs-12 col-md-8">
+					<ul class="nav">
+						<li><a href="#contact"><%= locals.layout.contact %></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="container">
+			<div class="bio section">
+				<div class="row heading">
+					<div class="col-12">
+						<h1 n:block=title><%= locals.homepage.bio %></h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a data-fancybox="gallery" href="/images/jan_1024.jpg">
+							<img src="/images/jan_125.jpg" alt="Jan Kubiče fotka" width="125" height="125" class="round">
+						</a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<table>
+							<tr>
+								<th><%= locals.homepage.name %></th>
+								<td>Ing. Jan Kubiče</td>
+							</tr>
+							<tr>
+								<th><%= locals.homepage.age %></th>
+								<td><span id="age"><%= locals.age %></span>&nbsp;<%= locals.homepage.years %></td>
+							</tr>
+							<tr>
+								<th><%= locals.homepage.location %></th>
+								<td><%= locals.homepage.prague %></td>
+							</tr>
+							<tr>
+								<th><%= locals.homepage.languages %></th>
+								<td><%= locals.homepage.english %>, <%= locals.homepage.spanish %></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="technology section">
+				<div class="row heading">
+					<div class="col-12">
+						<h2><%= locals.homepage.technology %></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="/images/tech.png" alt="Technologie" width="125" height="125">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<div class="row">
+							<div class="col-xs-6 col-md-4">
+								<ul>
+									<li>HTML &amp; CSS</li>
+									<li>HTML email</li>
+									<li>Sass &amp; LESS</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<ul>
+									<li>JavaScript &amp; jQuery</li>
+									<li>PHP &amp; Nette</li>
+									<li>Photoshop</li>
+								</ul>
+							</div>
+							<div class="col-xs-6 col-md-4">
+								<ul>
+									<li>GIT</li>
+									<li>WordPress</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="work section">
+				<div class="row heading">
+					<div class="col-12">
+						<h2><%= locals.homepage.jobs %></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="https://www.ebay.com/"><img src="/images/ebay.png" alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.ebay.developer %></h3>
+						<p>2019 - <%= locals.homepage.present %></p>
+						<p>
+							<ul>
+								<li><%=  %></li>
+								<li><%=  %></li>
+								<li><%=  %></li>
+								<li><%=  %></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="https://www.conrad.cz/"><img src="/images/conrad.png" alt="<%= locals.homepage.conrad %>" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.marketing %></h3>
+						<p>2018 - 2019</p>
+						<p>
+							<ul>
+								<li><%= locals.homepage.conrad.coding %></li>
+								<li><%= locals.homepage.conrad.automation %></li>
+								<li><%= locals.homepage.conrad.segmentation %></li>
+								<li><%= locals.homepage.conrad.analysis %></li>
+								<li><%= locals.homepage.conrad.quality %></li>
+								<li><%= locals.homepage.conrad.copy %></li>
+								<li><%= locals.homepage.conrad.project %></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="https://smartselling.cz/"><img src="/images/smartselling.png" alt="<%= locals.homepage.smartselling %>" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.marketing %></h3>
+						<p>2013 - 2018</p>
+						<p>
+							<ul>
+								<li><%= locals.homepage.smartselling.coding %></li>
+								<li><%= locals.homepage.smartselling.wordpress %></li>
+								<li><%= locals.homepage.smartselling.frontend %></li>
+								<li><%= locals.homepage.smartselling.techsupport %></li>
+								<li><%= locals.homepage.smartselling.training %></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+				<hr>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125" height="125">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.freelancer.freelancer %></h3>
+						<p>2012 - 2018</p>
+						<p>
+							<ul>
+								<li><%= locals.homepage.freelancer.dev %></li>
+								<li><%= locals.homepage.freelancer.email %></li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="education section">
+				<div class="row heading">
+					<div class="col-12">
+						<h2><%= locals.homepage.education %></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="https://www.vse.cz/"><img src="/images/vse.png" alt="VŠE" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.vse %></h3>
+						<p><%= locals.homepage.faculty %><br>
+						2011 - 2017</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="http://www.gvp.cz/"><img src="/images/gvp.png" alt="GVP" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><%= locals.homepage.grammarschool %> Na Vítězné pláni</h3>
+						<p>2005 - 2011</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div id="contact" class="contact section">
+				<div class="row heading">
+					<div class="col-12">
+						<h2><%= locals.layout.contact %></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+						<a href="mailto:jan@kubice.net"><img src="/images/contact.png" alt="<%= locals.layout.contact %>" width="125" height="125"></a>
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><a href="mailto:jan@kubice.net">jan@kubice.net</a></h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-2">
+					</div>
+					<div class="col-xs-12 col-md-10">
+						<h3><a href="https://www.linkedin.com/in/jan-kubi%C4%8De-09479370/">LinkedIn <%= locals.homepage.profile %></a></h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
+	<script src="/js/main.js"></script>
+</body>
+</html>
