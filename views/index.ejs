@@ -8,6 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin-ext" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 	<title>Jan Kubiče</title>
 </head>
 <body>
@@ -90,6 +94,11 @@
 					<div class="col-xs-12 col-md-10">
 						<div class="row">
 							<div class="col-xs-6 col-md-4">
+								<div class="progress-bar">
+									<div class="progress-bar-fill" style="width: 50%;"><span id="git">50</span>%</div>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-4">
 								<ul>
 									<li>HTML &amp; CSS</li>
 									<li>HTML email</li>
@@ -129,14 +138,17 @@
 						<p>2019 - <%= locals.homepage.present %></p>
 						<p>
 							<ul>
-								<li><%=  %></li>
-								<li><%=  %></li>
-								<li><%=  %></li>
-								<li><%=  %></li>
+								<li><%= locals.homepage.ebay.transactional %></li>
+								<li><%= locals.homepage.ebay.testing %></li>
+								<li><%= locals.homepage.ebay.tools %></li>
+								<li><%= locals.homepage.ebay.automation %></li>
+								<li><%= locals.homepage.ebay.processes %></li>
+								<li><%= locals.homepage.ebay.training %></li>
 							</ul>
 						</p>
 					</div>
 				</div>
+				<hr>
 				<div class="row">
 					<div class="col-xs-12 col-md-2">
 						<a href="https://www.conrad.cz/"><img src="/images/conrad.png" alt="<%= locals.homepage.conrad %>" width="125" height="125"></a>

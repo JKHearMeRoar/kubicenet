@@ -45,6 +45,6 @@ $(function () {
 
 	// Usage
 	animateNumber("age", 3000); // Animates the number from 0 to original value in 3 seconds
-
+	animateNumber("git", 3000);
 
 });

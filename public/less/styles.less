@@ -54,15 +54,16 @@ body {
 }
 
 .content {
-	h1, h2, h3, h4 {
+
+	h1,
+	h2,
+	h3,
+	h4 {
 		font-weight: 300;
 	}
 
-	h1 {
-		// color: @blue;
-	}
-
-	h1, h2 {
+	h1,
+	h2 {
 		text-align: center;
 		margin-bottom: 10px;
 	}
@@ -82,6 +83,7 @@ body {
 
 	a {
 		color: @blue;
+
 		/*
 		-webkit-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
 		   -moz-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
@@ -117,10 +119,10 @@ body {
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
 	-webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 .lang {
@@ -137,6 +139,7 @@ body {
 			display: none;
 		}
 	}
+
 	&.en {
 		.english {
 			display: none;
@@ -159,7 +162,7 @@ body {
 		justify-content: center;
 		padding: 20px 0px 10px 0px;
 	}
-	
+
 	a {
 		display: inline-block;
 		margin: auto 0;
@@ -182,7 +185,6 @@ body {
 		}
 
 		li {
-			display: inline-block;
 			float: left;
 			position: relative;
 			list-style: none;
@@ -191,8 +193,9 @@ body {
 
 				a {
 					color: @blue;
-					
-					&:before, &:after {
+
+					&:before,
+					&:after {
 						background: @blue;
 						opacity: 1;
 					}
@@ -250,9 +253,12 @@ body {
 					opacity: 0;
 				}
 
-				&:hover, &:active {
+				&:hover,
+				&:active {
 					color: @blue;
-					&:before, &:after {
+
+					&:before,
+					&:after {
 						background: @blue;
 						opacity: 1;
 
@@ -269,6 +275,20 @@ body {
 			}
 		}
 	}
+}
+
+.progress-bar {
+	width: 100%;
+	height: 20px;
+	background-color: @light-gray;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.progress-bar-fill {
+	height: 100%;
+	background-color: @light-blue;
+	transition: width 0.3s ease-in-out;
 }
 
 .section {
@@ -292,7 +312,7 @@ body {
 		text-align: center;
 	}
 
-	> .row > .col-md-2 {
+	>.row>.col-md-2 {
 
 		a {
 			outline: 0;
@@ -315,7 +335,7 @@ body {
 		text-align: center;
 	}
 
-	> .row {
+	>.row {
 		padding-top: 20px;
 		padding-bottom: 20px;
 		align-items: center;
@@ -343,12 +363,4 @@ body {
 	td {
 		padding: 2px 8px;
 	}
-}
-
-.technology {
-	
-}
-
-.education {
-	
 }
