@@ -52,7 +52,13 @@
 			"marketing": "Email Marketing Specialist",
 			"ebay": {
 				"ebay": "eBay",
-				"developer": "Front-end Developer"
+				"developer": "Front-end Developer",
+				"automation": "Setting up automated personalized marketing campaigns",
+				"transactional": "Managing transactional emails portfolio",
+				"testing": "Setting up automated testing",
+				"tools": "Developing internal marketing tools",
+				"processes": "Setting up and optimizing dev team processes",
+				"training": "Providing technical training for junior colleagues"
 			}
 		},
 		"about": {
@@ -111,7 +117,13 @@
 			"marketing": "Email Marketing Specialist",
 			"ebay": {
 				"ebay": "eBay",
-				"developer": "Front-end Developer"
+				"developer": "Front-end Developer",
+				"automation": "Vytváření automatických personalizovaných marketingových kampaní",
+				"transactional": "Správa portfolia transakčních emailů",
+				"testing": "Vytváření automatizovaných testů",
+				"tools": "Vývoj interních marketingových nástroů",
+				"processes": "Nastavování a optimalizace vývojových procesů",
+				"training": "Vzdělávání juniorních kolegů"
 			}
 		},
 		"about": {
