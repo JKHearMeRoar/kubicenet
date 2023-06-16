@@ -1,13 +1,14 @@
 const express = require("express")
+const morgan = require('morgan')
 const app = express()
 
+app.use(morgan('dev'))
 
 app.use(express.static('public'));
 
 app.use((req, res, next) => {
   // Detect user's preferred language (you can implement your own logic here)
   const preferredLanguage = req.headers['accept-language'].split(',')[0].trim();
-
   // Set the language based on the user's preference
   req.language = preferredLanguage;
 
