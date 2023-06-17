@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.mjs",
     "dev": "concurrently \"npm run watch-less\" \"npm run start\"",
     "prod": "node server.js",
     "less": "lessc public/less/styles.less public/css/styles.css",

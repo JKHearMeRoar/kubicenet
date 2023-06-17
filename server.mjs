@@ -1,5 +1,8 @@
-const express = require("express")
-const morgan = require('morgan')
+import express from 'express'
+import morgan from 'morgan'
+
+import languageStrings from './languages.json' assert { type: 'json' }
+import enRouter from './routes/en.js'
 const app = express()
 
 app.use(morgan('dev'))
@@ -33,15 +36,10 @@ app.set("view engine", "ejs")
 
 app.get('/', (req, res) => {
 	const language = req.language || 'en'; // Default to English if language is not set
-	const languageStrings = require('./languages.json');
 	const strings = languageStrings[language];
-
   const age = calculateAge("1991-08-13")
-  
 	res.render('index', { language: language, ...strings, age });
   });
-
-const enRouter = require("./routes/en")
 
 app.use("/en", enRouter)
 
