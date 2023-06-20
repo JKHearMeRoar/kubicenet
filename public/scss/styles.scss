@@ -1,57 +1,17 @@
-/*!
- * Styles
- *
- * Creator: Jan Kubiče
- * Site: http://kubice.net
- * Date: 01.08.2017
- */
+// Customize some defaults
 
-//
-//	Variables
-//
+$body-bg: #495867;
+$lighter-gray2: #e9e9e9;
 
-@gray: #444;
-@dark-gray: #1d2127;
-@light-gray: #777;
-@lighter-gray: #f4f4f4;
-@lighter-gray2: #e9e9e9;
-@blue: #3484D2;
-@light-blue: #08c;
-@light-blue2: #72c3d4;
-@darker-blue: #0077b3;
-@dark-blue: #069;
-@red: #d94545;
-@green: #95b962;
-@purple: #936ca3;
-@font: 'Roboto', sans-serif;
+$gray: #495867;
+$blue: #577399;
+$light-blue: #BDD5EA;
+$ghost-white: #F7F7FF;
+$orange: #FE5F55;
+$black: #000000;
+$light-gray: #777;
 
-// Media query
-
-@xs: ~"only screen and (max-width: 768px)";
-
-//
-// Reset Styles
-//
-
-* {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-img {
-	border: 0;
-	vertical-align: middle;
-}
-
-body {
-	font-size: 15px;
-	line-height: 1.6;
-	color: @gray;
-	background: @lighter-gray;
-	margin: 0;
-	font-family: @font;
-}
+@import "bootstrap/scss/bootstrap";
 
 .content {
 
@@ -64,7 +24,7 @@ body {
 
 	h1,
 	h2 {
-		text-align: center;
+		// text-align: center;
 		margin-bottom: 10px;
 	}
 
@@ -77,22 +37,15 @@ body {
 		border: 0;
 		height: 1px;
 		margin: 22px 0;
-		background-image: -webkit-linear-gradient(left, transparent, @lighter-gray2, transparent);
-		background-image: linear-gradient(to right, transparent, @lighter-gray2, transparent);
+		background-image: -webkit-linear-gradient(left, transparent, $lighter-gray2, transparent);
+		background-image: linear-gradient(to right, transparent, $lighter-gray2, transparent);
 	}
 
 	a {
-		color: @blue;
+		color: $blue;
 
-		/*
-		-webkit-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
-		   -moz-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
-		    -ms-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
-		     -o-transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
-		        transition: background-color .2s ease, border .2s ease, color .2s ease, opacity .2s ease-in-out;
-		*/
 		&:hover {
-			color: @blue;
+			color: $blue;
 			text-decoration: underline;
 		}
 	}
@@ -100,10 +53,29 @@ body {
 	img {
 		&.round {
 			border-radius: 50%;
+			padding: 3px;
+			border: 3px solid $blue;
+		}
+	}
+
+	a:hover {
+		img {
+			&.round {
+				border-color: $orange;
+				transition: all 0.5s;
+			}
+		}
+	}
+
+	.container {
+		background-color: $ghost-white;
+		max-width: 960px;
+
+		.hello {
+			text-align: left;
 		}
 	}
 }
-
 
 #ajax-spinner {
 	margin: 15px 0 0 15px;
@@ -124,6 +96,10 @@ body {
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+
+
+
+
 
 .lang {
 	.flags {
@@ -151,14 +127,14 @@ body {
 
 .header {
 	background: white;
-	border-top: 5px solid @lighter-gray2;
-	border-bottom: 1px solid @lighter-gray2;
+	border-top: 5px solid $lighter-gray2;
+	border-bottom: 1px solid $lighter-gray2;
 }
 
 #logo {
 	display: flex;
 
-	@media @xs {
+	@include media-breakpoint-down(sm) {
 		justify-content: center;
 		padding: 20px 0px 10px 0px;
 	}
@@ -171,7 +147,7 @@ body {
 
 #menu {
 
-	@media @xs {
+	@include media-breakpoint-down(sm) {
 		text-align: center;
 	}
 
@@ -179,7 +155,7 @@ body {
 		display: block;
 		float: right;
 
-		@media @xs {
+		@include media-breakpoint-down(sm) {
 			display: inline-block;
 			float: none;
 		}
@@ -192,11 +168,11 @@ body {
 			&.current {
 
 				a {
-					color: @blue;
+					color: $blue;
 
 					&:before,
 					&:after {
-						background: @blue;
+						background: $blue;
 						opacity: 1;
 					}
 				}
@@ -204,7 +180,7 @@ body {
 				&:before {
 					position: absolute;
 					top: -3px;
-					background: @blue;
+					background: $blue;
 					left: 50%;
 					content: '';
 					display: block;
@@ -217,7 +193,7 @@ body {
 					-o-transform: rotate(45deg);
 					transform: rotate(45deg);
 
-					@media @xs {
+					@include media-breakpoint-down(sm) {
 						display: none;
 					}
 				}
@@ -226,7 +202,7 @@ body {
 			a {
 				display: inline-block;
 				padding: 25px 25px 25px;
-				color: @gray;
+				color: $gray;
 				font-weight: 700;
 				font-size: 14px;
 				line-height: 1.7;
@@ -255,20 +231,20 @@ body {
 
 				&:hover,
 				&:active {
-					color: @blue;
+					color: $blue;
 
 					&:before,
 					&:after {
-						background: @blue;
+						background: $blue;
 						opacity: 1;
 
-						@media @xs {
+						@include media-breakpoint-down(sm) {
 							opacity: 0;
 						}
 					}
 				}
 
-				@media @xs {
+				@include media-breakpoint-down(sm) {
 					text-decoration: underline;
 					padding: 10px 20px;
 				}
@@ -280,14 +256,14 @@ body {
 .progress-bar {
 	width: 100%;
 	height: 20px;
-	background-color: @light-gray;
+	background-color: $light-gray;
 	border-radius: 5px;
 	overflow: hidden;
 }
 
 .progress-bar-fill {
 	height: 100%;
-	background-color: @light-blue;
+	background-color: $light-blue;
 	transition: width 0.3s ease-in-out;
 }
 
@@ -300,7 +276,7 @@ body {
 			padding-left: 30px;
 			background: url('../images/check.png') no-repeat 0% 50%;
 
-			@media @xs {
+			@include media-breakpoint-down(sm) {
 				// display: inline-block;
 				padding: 0;
 				background: transparent;
@@ -308,7 +284,7 @@ body {
 		}
 	}
 
-	@media @xs {
+	@include media-breakpoint-down(sm) {
 		text-align: center;
 	}
 
@@ -325,7 +301,7 @@ body {
 			max-width: 125px;
 			display: block;
 
-			@media @xs {
+			@include media-breakpoint-down(sm) {
 				margin: 0 auto 15px auto;
 			}
 		}
@@ -350,7 +326,7 @@ body {
 .bio {
 
 	table {
-		@media @xs {
+		@include media-breakpoint-down(sm) {
 			margin: 0 auto;
 		}
 	}

@@ -5,7 +5,7 @@ import languageStrings from './languages.json' assert { type: 'json' }
 import enRouter from './routes/en.js'
 const app = express()
 
-app.use(morgan('dev'))
+// app.use(morgan('dev'))
 
 app.use(express.static('public'));
 
