@@ -37,7 +37,6 @@ $light-gray: #777;
 		border: 0;
 		height: 1px;
 		margin: 22px 0;
-		background-image: -webkit-linear-gradient(left, transparent, $lighter-gray2, transparent);
 		background-image: linear-gradient(to right, transparent, $lighter-gray2, transparent);
 	}
 
@@ -90,10 +89,6 @@ $light-gray: #777;
 	-webkit-transform: scale(1.05);
 	-ms-transform: scale(1.05);
 	transform: scale(1.05);
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
@@ -187,10 +182,6 @@ body {
 					width: 7px;
 					height: 7px;
 					margin: 0 0 0 -4px;
-					-webkit-transform: rotate(45deg);
-					-moz-transform: rotate(45deg);
-					-ms-transform: rotate(45deg);
-					-o-transform: rotate(45deg);
 					transform: rotate(45deg);
 
 					@include media-breakpoint-down(sm) {
