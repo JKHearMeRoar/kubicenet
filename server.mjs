@@ -30,7 +30,7 @@ function calculateAge(birthday) {
   return age
 }
 
-
+app.use('/js', express.static('./node_modules/bootstrap/dist/js'));
 
 app.set("view engine", "ejs")
 
@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 	res.render('index', { language: language, ...strings, age });
   });
 
-app.use("/en", enRouter)
+// app.use("/en", enRouter)
 
 const port = 3000;
 app.set('port', port);
