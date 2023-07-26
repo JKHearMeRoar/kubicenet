@@ -16857,6 +16857,7 @@ body {
 }
 
 .hello .btn svg {
+  width: 2rem;
   height: 2rem;
   color: #F7F7FF;
 }
@@ -17137,13 +17138,12 @@ ul li {
 .education a {
   outline: 0;
   display: block;
-  font-size: 30%;
+  font-size: 70%;
 }
 .work img,
 .education img {
-  width: 100%;
+  width: 8em;
   height: auto;
-  max-width: 125px;
   display: block;
   background: #F7F7FF;
   padding: 5px;

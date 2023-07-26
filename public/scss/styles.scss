@@ -83,6 +83,7 @@ body {
 .hello {
 	.btn {
 		svg {
+			width: 2rem;
 			height: 2rem;
 			color: $ghost-white;
 		}
@@ -416,13 +417,12 @@ ul {
 	a {
 		outline: 0;
 		display: block;
-		font-size: 30%;
+		font-size: 70%;
 	}
 
 	img {
-		width: 100%;
+		width: 8em;
 		height: auto;
-		max-width: 125px;
 		display: block;
 		background: $ghost-white;
 		padding: 5px;
