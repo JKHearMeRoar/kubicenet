@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{language %> %>">
+<html lang="<%=language %>">
 
 <head>
 	<meta charset="UTF-8">
@@ -18,53 +18,78 @@
 
 <body>
 
-	<div class="content">
-		<div class="container">
-			<div class="bio section">
-				<div class="row heading align-items-center">
-					<div class="col-xs-12 col-md-8 hello">
-						<h1 n:block=title>Jan Kubiče</h1>
-						<h2>Frontend Developer</h2>
-						<p>Jmenuji se Honza, je mi <span id="age">
-								<%= locals.age %>
-							</span>&nbsp;<%= locals.homepage.years %> a jsem frontend vývojář z Prahy. </p>
-					</div>
-					<div class="col-xs-12 col-md-4">
-						<a data-fancybox="gallery" href="/images/jan_1024.jpg">
-							<img src="/images/jan_600.jpg" alt="Jan Kubiče fotka" width="300" height="300"
-								class="round">
+	<div class="container">
+		<div class="bio section">
+			<div class="row heading align-items-center py-5">
+				<div class="col-xs-12 col-md-8 hello">
+					<h1>Jan Kubiče</h1>
+					<h2 class="border-start border-primary border-5 ps-2">Frontend Developer</h2>
+					<p>Jmenuji se Honza, je mi <span id="age">
+							<%= locals.age %>
+						</span>&nbsp;<%= locals.homepage.years %> a jsem frontend vývojář z Prahy. </p>
+					<div class="">
+						<a href="mailto:jan@kubice.net" class="btn">
+							<!-- <img src="/images/email.svg" alt="Email icon"> -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="6 6 20 20"><path d="M16.006 6.5a.5.5 0 0 0-.049.002.5.5 0 0 0-.27.1L13.18 8.48H8.504v3.504l-1.697 1.272a.5.5 0 0 0-.29.637.5.5 0 0 0-.013.115v10.967a.5.5 0 0 0 .002.076.5.5 0 0 0 .02.097.5.5 0 0 0 .017.045.5.5 0 0 0 0 .002.5.5 0 0 0 .021.043.5.5 0 0 0 0 .002.5.5 0 0 0 .168.18.5.5 0 0 0 .002 0 .5.5 0 0 0 .041.025.5.5 0 0 0 .002 0 .5.5 0 0 0 .141.047.5.5 0 0 0 .002 0 .5.5 0 0 0 .047.006.5.5 0 0 0 .002 0 .5.5 0 0 0 .004 0 .5.5 0 0 0 .03.002.5.5 0 0 0 .015 0h17.88a.5.5 0 0 0 .606-.576V14.008a.5.5 0 0 0-.037-.197.5.5 0 0 0-.264-.538l-1.7-1.271V8.48H18.8L16.285 6.6a.5.5 0 0 0-.28-.1zm-.018 1.125 1.143.855h-2.283l1.14-.855zM9.504 9.48h13V14.674l-6.518 4.07-6.482-4.04V9.48zm3 .989v1.062h6.984V10.47h-6.984zm-1 2.031v1.063h9V12.5h-9zm-3 .734v.848l-.617-.385.617-.463zm15 .016.582.436-.582.363v-.799zm-10 1.25v1.063h5V14.5h-5zm11 .104v9.47l-5.217-3.486a.5.5 0 0 0-.283-.09v.002a.5.5 0 0 0-.274.92l4.614 3.08H8.654l4.62-3.08a.5.5 0 0 0-.288-.92.5.5 0 0 0-.267.088l-5.215 3.478v-9.431l1 .623 7.219 4.5.033.021h.006a.5.5 0 0 0 .002.002.5.5 0 0 0 .002 0 .5.5 0 0 0 .013.006.5.5 0 0 0 .076.027.5.5 0 0 0 .03.008.5.5 0 0 0 .02.004.5.5 0 0 0 .003 0 .5.5 0 0 0 .045.006.5.5 0 0 0 .006 0 .5.5 0 0 0 .123-.008.5.5 0 0 0 .02-.004.5.5 0 0 0 .095-.033.5.5 0 0 0 .016-.008h.006l.027-.017a.5.5 0 0 0 .006-.004l7.252-4.53 1-.624z" fill="currentColor"></path></svg>
+						</a>
+						<a href="https://www.linkedin.com/in/jan-kubice-09479370/" class="btn">
+							<!-- <img src="/images/linkedin.svg" alt="LinkedIn icon"> -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z" fill="currentColor"></path></svg>
 						</a>
 					</div>
+
+					<!-- <div>
+						<a href="/en/" class="btn btn-primary">
+							<img src="/images/english.svg" alt="English icon">
+						</a>
+					</div> -->
 				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-6 section techstack">
-						<div class="row">
+				<div class="col-xs-12 col-md-4">
+					<a data-fancybox="gallery" href="/images/jan_1024.jpg">
+						<img src="/images/jan_600.jpg" alt="Jan Kubiče fotka" width="300" height="300" class="halo rounded-circle">
+					</a>
+				</div>
+			</div>
+			<!-- <div class="row row-cols-1 row-cols-md-2 gap-4 g-4"> -->
+			<div class="row row-cols-1 row-cols-md-2 g-4">
+				<div class="col techstack">
+					<div class="row">
+						<div class="col">
 							<h3>
 								Tech stack
 							</h3>
-							<div>
-								<div class="badge rounded-pill">
-									<img src="/images/html5.png" alt="HTML icon" width="30" height="30">
+							<div class="d-flex flex-wrap gap-2">
+								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+									<!-- <img src="/images/html5.png" alt="HTML icon" width="30" height="30"> -->
+									<!-- <i class="fa-brands fa-html5"></i> -->
+									<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"/></svg> -->
+									<img src="/images/html.svg" alt="HTML icon">
 									<span>HTML</span>
 								</div>
 								<div class="badge rounded-pill">
-									<img src="/images/css3.png" alt="CSS icon" width="30" height="30">
+									<!-- <img src="/images/css3.png" alt="CSS icon" width="30" height="30"> -->
+									<!-- <i class="fa-brands fa-css3-alt"></i> -->
+									<img src="/images/css.svg" alt="CSS icon">
 									<span>CSS</span>
 								</div>
 								<div class="badge rounded-pill">
-									<img src="/images/javascript.png" alt="JavaScript icon" width="30" height="30">
+									<!-- <img src="/images/javascript.png" alt="JavaScript icon" width="30" height="30"> -->
+									<img src="/images/javascript.svg" alt="JavaScript icon">
 									<span>JavaScript</span>
 								</div>
 								<div class="badge rounded-pill">
-									<img src="/images/sass.png" alt="SASS icon" width="30" height="30">
+									<!-- <img src="/images/sass.png" alt="SASS icon" width="30" height="30"> -->
+									<img src="/images/sass.svg" class="h-5 w-5 md:w-7 md:h-7" alt="SASS icon">
 									<span>SASS</span>
 								</div>
 								<div class="badge rounded-pill">
-									<img src="/images/git.png" alt="Git icon" width="30" height="30">
+									<!-- <img src="/images/git.png" alt="Git icon" width="30" height="30"> -->
+									<img src="/images/git.svg" alt="Git icon">
 									<span>Git</span>
 								</div>
 								<div class="badge rounded-pill">
-									<img src="/images/nodejs.png" alt="NodeJS icon" width="30" height="30">
+									<!-- <img src="/images/nodejs.png" alt="NodeJS icon" width="30" height="30"> -->
+									<img src="/images/nodejs.svg" alt="Noje.js icon">
 									<span>Node.js</span>
 								</div>
 								<!--
@@ -83,61 +108,70 @@
 								-->
 							</div>
 						</div>
-						<div class="row">
+
+					</div>
+					<div class="row">
+						<div class="col">
 							<h3>
 								<%= locals.homepage.languages %>
 							</h3>
-							<div>
-								<div class="badge rounded-pill">
-									<img src="/images/html5.png" alt="HTML icon" width="30" height="30">
+							<div class="d-flex flex-wrap gap-2">
+								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+									<img src="/images/czech.svg" alt="Czech flag">
 									<span>Czech</span>
 								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/css3.png" alt="CSS icon" width="30" height="30">
+								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+									<img src="/images/english.svg" alt="English flag">
 									<span>English</span>
 								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/javascript.png" alt="JavaScript icon" width="30" height="30">
+								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+									<img src="/images/spanish.svg" alt="Spanish flag">
 									<span>Spanish</span>
 								</div>
 							</div>
 						</div>
-						<div class="education section">
-							<div class="row heading">
-								<div class="col-12">
-									<h2>
-										<%= locals.homepage.education %>
-									</h2>
+
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="education section">
+								<div class="row heading">
+									<div class="col-12">
+										<h2>
+											<%= locals.homepage.education %>
+										</h2>
+									</div>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<a href="https://www.vse.cz/"><img src="/images/vse.png" alt="VŠE" width="125"
-											height="125"></a>
+								<div class="row">
+									<div class="col-xs-12 col-md-2">
+										<a href="https://www.vse.cz/"><img src="/images/vse.png" alt="VŠE" width="125"
+												height="125" class="halo rounded-circle"></a>
+									</div>
+									<div class="col-xs-12 col-md-10">
+										<h3>
+											<%= locals.homepage.vse %>
+										</h3>
+										<p>
+											<%= locals.homepage.faculty %><br>
+												2011 - 2017
+										</p>
+									</div>
 								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.vse %>
-									</h3>
-									<p>
-										<%= locals.homepage.faculty %><br>
-											2011 - 2017
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<a href="http://www.gvp.cz/"><img src="/images/gvp.png" alt="GVP" width="125"
-											height="125"></a>
-								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.grammarschool %> Na Vítězné pláni
-									</h3>
-									<p>2005 - 2011</p>
+								<div class="row">
+									<div class="col-xs-12 col-md-2">
+										<a href="https://www.gvp.cz/"><img src="/images/gvp.png" alt="GVP" width="125"
+												height="125" class="halo rounded-circle"></a>
+									</div>
+									<div class="col-xs-12 col-md-10">
+										<h3>
+											<%= locals.homepage.grammarschool %> Na Vítězné pláni
+										</h3>
+										<p>2005 - 2011</p>
+									</div>
 								</div>
 							</div>
 						</div>
+
 						<!--
 						<div class="row">
 							<h3>
@@ -181,489 +215,154 @@
 						</div>
 						-->
 					</div>
-					<div class="col-xs-12 col-md-6 hello">
-						<div class="work section">
-							<div class="row heading">
-								<div class="col-12">
-									<h2>
-										<%= locals.homepage.jobs %>
-									</h2>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<a href="https://www.ebay.com/"><img src="/images/ebay.png"
-											alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125"></a>
-								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.ebay.developer %>
-									</h3>
-									<p>2019 - <%= locals.homepage.present %>
-									</p>
-									<p>
-									<ul>
-										<li>
-											<%= locals.homepage.ebay.transactional %>
-										</li>
-										<li>
-											<%= locals.homepage.ebay.testing %>
-										</li>
-										<li>
-											<%= locals.homepage.ebay.tools %>
-										</li>
-										<li>
-											<%= locals.homepage.ebay.automation %>
-										</li>
-										<li>
-											<%= locals.homepage.ebay.processes %>
-										</li>
-										<li>
-											<%= locals.homepage.ebay.training %>
-										</li>
-									</ul>
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<a href="https://www.conrad.cz/"><img src="/images/conrad.png"
-											alt="<%= locals.homepage.conrad %>" width="125" height="125"></a>
-								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.marketing %>
-									</h3>
-									<p>2018 - 2019</p>
-									<p>
-									<ul>
-										<li>
-											<%= locals.homepage.conrad.coding %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.automation %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.segmentation %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.analysis %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.quality %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.copy %>
-										</li>
-										<li>
-											<%= locals.homepage.conrad.project %>
-										</li>
-									</ul>
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<a href="https://smartselling.cz/"><img src="/images/smartselling.png"
-											alt="<%= locals.homepage.smartselling %>" width="125" height="125"></a>
-								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.marketing %>
-									</h3>
-									<p>2013 - 2018</p>
-									<p>
-									<ul>
-										<li>
-											<%= locals.homepage.smartselling.coding %>
-										</li>
-										<li>
-											<%= locals.homepage.smartselling.wordpress %>
-										</li>
-										<li>
-											<%= locals.homepage.smartselling.frontend %>
-										</li>
-										<li>
-											<%= locals.homepage.smartselling.techsupport %>
-										</li>
-										<li>
-											<%= locals.homepage.smartselling.training %>
-										</li>
-									</ul>
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-xs-12 col-md-2">
-									<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>"
-										width="125" height="125">
-								</div>
-								<div class="col-xs-12 col-md-10">
-									<h3>
-										<%= locals.homepage.freelancer.freelancer %>
-									</h3>
-									<p>2012 - 2018</p>
-									<p>
-									<ul>
-										<li>
-											<%= locals.homepage.freelancer.dev %>
-										</li>
-										<li>
-											<%= locals.homepage.freelancer.email %>
-										</li>
-									</ul>
-									</p>
-								</div>
+
+				</div>
+				<div class="col jobs">
+					<div class="work">
+						<div class="row heading">
+							<div class="col-12">
+								<h2>
+									<%= locals.homepage.jobs %>
+								</h2>
 							</div>
 						</div>
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="lang">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="flags">
-						<a href="/en/" class="english"><img src="/images/en.png" alt="EN" width="20" height="15"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="header">
-		<div class="container">
-			<div class="row">
-				<div id="logo" class="col-xs-12 col-md-4">
-					<a href="#">
-						<img src="/images/jankubice.png" alt="Jan Kubiče" width="185" height="32">
-					</a>
-				</div>
-				<div id="menu" class="col-xs-12 col-md-8">
-					<ul class="nav">
-						<li><a href="#contact">
-								<%= locals.layout.contact %>
-							</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="content">
-		<div class="container">
-			<div class="bio section">
-				<div class="row heading">
-					<div class="col-12">
-						<h1 n:block=title>
-							<%= locals.homepage.bio %>
-						</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a data-fancybox="gallery" href="/images/jan_1024.jpg">
-							<img src="/images/jan_125.jpg" alt="Jan Kubiče fotka" width="125" height="125"
-								class="round">
-						</a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<table>
-							<tr>
-								<th>
-									<%= locals.homepage.name %>
-								</th>
-								<td>Ing. Jan Kubiče</td>
-							</tr>
-							<tr>
-								<th>
-									<%= locals.homepage.age %>
-								</th>
-								<td><span id="age">
-										<%= locals.age %>
-									</span>&nbsp;<%= locals.homepage.years %>
-								</td>
-							</tr>
-							<tr>
-								<th>
-									<%= locals.homepage.location %>
-								</th>
-								<td>
-									<%= locals.homepage.prague %>
-								</td>
-							</tr>
-							<tr>
-								<th>
-									<%= locals.homepage.languages %>
-								</th>
-								<td>
-									<%= locals.homepage.english %>, <%= locals.homepage.spanish %>
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="technology section">
-				<div class="row heading">
-					<div class="col-12">
-						<h2>
-							<%= locals.homepage.technology %>
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<img src="/images/tech.png" alt="Technologie" width="125" height="125">
-					</div>
-					<div class="col-xs-12 col-md-10">
 						<div class="row">
-							<div class="col-xs-6 col-md-4">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span>
-								</div>
-								<!-- <div class="progress-bar">
-									<div class="progress-bar-fill" style="width: 50%;"><span id="git">50</span>%</div>
-								</div> -->
+							<div class="col-xs-12 col-md-2">
+								<a href="https://www.ebay.com/">
+									<img src="/images/ebay.png" alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125" class="halo rounded-circle"></a>
 							</div>
-							<div class="col-xs-6 col-md-4">
+							<div class="col-xs-12 col-md-10">
+								<h3>
+									<%= locals.homepage.ebay.developer %>
+								</h3>
+								<p>2019 - <%= locals.homepage.present %>
+								</p>
+								<p>
 								<ul>
-									<li>HTML &amp; CSS</li>
-									<li>HTML email</li>
-									<li>Sass &amp; LESS</li>
+									<li>
+										<%= locals.homepage.ebay.transactional %>
+									</li>
+									<li>
+										<%= locals.homepage.ebay.testing %>
+									</li>
+									<li>
+										<%= locals.homepage.ebay.tools %>
+									</li>
+									<li>
+										<%= locals.homepage.ebay.automation %>
+									</li>
+									<li>
+										<%= locals.homepage.ebay.processes %>
+									</li>
+									<li>
+										<%= locals.homepage.ebay.training %>
+									</li>
 								</ul>
+								</p>
 							</div>
-							<div class="col-xs-6 col-md-4">
-								<ul>
-									<li>JavaScript &amp; jQuery</li>
-									<li>PHP &amp; Nette</li>
-									<li>Photoshop</li>
-								</ul>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<a href="https://www.conrad.cz/"><img src="/images/conrad.png"
+										alt="<%= locals.homepage.conrad %>" width="125" height="125" class="halo rounded-circle"></a>
 							</div>
-							<div class="col-xs-6 col-md-4">
+							<div class="col-xs-12 col-md-10">
+								<h3>
+									<%= locals.homepage.marketing %>
+								</h3>
+								<p>2018 - 2019</p>
+								<p>
 								<ul>
-									<li>GIT</li>
-									<li>WordPress</li>
+									<li>
+										<%= locals.homepage.conrad.coding %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.automation %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.segmentation %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.analysis %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.quality %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.copy %>
+									</li>
+									<li>
+										<%= locals.homepage.conrad.project %>
+									</li>
 								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<a href="https://smartselling.cz/"><img src="/images/smartselling.png"
+										alt="<%= locals.homepage.smartselling %>" width="125" height="125" class="halo rounded-circle"></a>
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<h3>
+									<%= locals.homepage.marketing %>
+								</h3>
+								<p>2013 - 2018</p>
+								<p>
+								<ul>
+									<li>
+										<%= locals.homepage.smartselling.coding %>
+									</li>
+									<li>
+										<%= locals.homepage.smartselling.wordpress %>
+									</li>
+									<li>
+										<%= locals.homepage.smartselling.frontend %>
+									</li>
+									<li>
+										<%= locals.homepage.smartselling.techsupport %>
+									</li>
+									<li>
+										<%= locals.homepage.smartselling.training %>
+									</li>
+								</ul>
+								</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 col-md-2">
+								<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125"
+									height="125" class="halo rounded-circle">
+							</div>
+							<div class="col-xs-12 col-md-10">
+								<h3>
+									<%= locals.homepage.freelancer.freelancer %>
+								</h3>
+								<p>2012 - 2018</p>
+								<p>
+								<ul>
+									<li>
+										<%= locals.homepage.freelancer.dev %>
+									</li>
+									<li>
+										<%= locals.homepage.freelancer.email %>
+									</li>
+								</ul>
+								</p>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="work section">
-				<div class="row heading">
-					<div class="col-12">
-						<h2>
-							<%= locals.homepage.jobs %>
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="https://www.ebay.com/"><img src="/images/ebay.png"
-								alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.ebay.developer %>
-						</h3>
-						<p>2019 - <%= locals.homepage.present %>
-						</p>
-						<p>
-						<ul>
-							<li>
-								<%= locals.homepage.ebay.transactional %>
-							</li>
-							<li>
-								<%= locals.homepage.ebay.testing %>
-							</li>
-							<li>
-								<%= locals.homepage.ebay.tools %>
-							</li>
-							<li>
-								<%= locals.homepage.ebay.automation %>
-							</li>
-							<li>
-								<%= locals.homepage.ebay.processes %>
-							</li>
-							<li>
-								<%= locals.homepage.ebay.training %>
-							</li>
-						</ul>
-						</p>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="https://www.conrad.cz/"><img src="/images/conrad.png"
-								alt="<%= locals.homepage.conrad %>" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.marketing %>
-						</h3>
-						<p>2018 - 2019</p>
-						<p>
-						<ul>
-							<li>
-								<%= locals.homepage.conrad.coding %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.automation %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.segmentation %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.analysis %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.quality %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.copy %>
-							</li>
-							<li>
-								<%= locals.homepage.conrad.project %>
-							</li>
-						</ul>
-						</p>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="https://smartselling.cz/"><img src="/images/smartselling.png"
-								alt="<%= locals.homepage.smartselling %>" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.marketing %>
-						</h3>
-						<p>2013 - 2018</p>
-						<p>
-						<ul>
-							<li>
-								<%= locals.homepage.smartselling.coding %>
-							</li>
-							<li>
-								<%= locals.homepage.smartselling.wordpress %>
-							</li>
-							<li>
-								<%= locals.homepage.smartselling.frontend %>
-							</li>
-							<li>
-								<%= locals.homepage.smartselling.techsupport %>
-							</li>
-							<li>
-								<%= locals.homepage.smartselling.training %>
-							</li>
-						</ul>
-						</p>
-					</div>
-				</div>
-				<hr>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125"
-							height="125">
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.freelancer.freelancer %>
-						</h3>
-						<p>2012 - 2018</p>
-						<p>
-						<ul>
-							<li>
-								<%= locals.homepage.freelancer.dev %>
-							</li>
-							<li>
-								<%= locals.homepage.freelancer.email %>
-							</li>
-						</ul>
-						</p>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div class="education section">
-				<div class="row heading">
-					<div class="col-12">
-						<h2>
-							<%= locals.homepage.education %>
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="https://www.vse.cz/"><img src="/images/vse.png" alt="VŠE" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.vse %>
-						</h3>
-						<p>
-							<%= locals.homepage.faculty %><br>
-								2011 - 2017
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="http://www.gvp.cz/"><img src="/images/gvp.png" alt="GVP" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3>
-							<%= locals.homepage.grammarschool %> Na Vítězné pláni
-						</h3>
-						<p>2005 - 2011</p>
-					</div>
-				</div>
-			</div>
-			<hr>
-			<div id="contact" class="contact section">
-				<div class="row heading">
-					<div class="col-12">
-						<h2>
-							<%= locals.layout.contact %>
-						</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-						<a href="mailto:jan@kubice.net"><img src="/images/contact.png"
-								alt="<%= locals.layout.contact %>" width="125" height="125"></a>
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3><a href="mailto:jan@kubice.net">jan@kubice.net</a></h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-md-2">
-					</div>
-					<div class="col-xs-12 col-md-10">
-						<h3><a href="https://www.linkedin.com/in/jan-kubi%C4%8De-09479370/">LinkedIn <%=
-									locals.homepage.profile %></a></h3>
-					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
-	<!-- <script src="https://nette.github.io/resources/js/netteForms.min.js"></script> -->
-	<script src="/js/main.js"></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+		<!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+		<!-- <script src="https://nette.github.io/resources/js/netteForms.min.js"></script> -->
+		<script src="/js/main.js"></script>
+		<script src="/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 
 </html>
