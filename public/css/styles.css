@@ -16910,7 +16910,7 @@ a:hover {
   transition: all 1s;
   border: 0.25em solid #009DDC;
   padding: 0.15em;
-  box-shadow: 0 0 2em 1em #009DDC, 0 0 3em 1.5em #6761A8, 0 0 4em 2em #009B72;
+  box-shadow: 0 0 2em 1em #009DDC, 0 0 3em 2em #6761A8, 0 0 4em 3em #009B72;
 }
 
 a:hover .halo {
@@ -16945,27 +16945,6 @@ a:hover {
 	}
 }
 */
-.container {
-  max-width: 960px;
-}
-.container .hello {
-  text-align: left;
-}
-
-#ajax-spinner {
-  margin: 15px 0 0 15px;
-  padding: 13px;
-  background: white url("../images/spinner.gif") no-repeat 50% 50%;
-  font-size: 0;
-  z-index: 123456;
-  display: none;
-}
-
-.scale:hover {
-  transform: scale(1.05);
-  transition: all 0.5s;
-}
-
 .lang .flags {
   padding: 0 0 5px 0;
   display: flex;
@@ -17105,21 +17084,24 @@ body.en .english {
 	transition: width 0.3s ease-in-out;
 }
 */
-.work,
-.education {
+.positions > .col,
+.education > .col {
   position: relative;
 }
-
-.work:after,
-.education:after {
+.positions > .col:after,
+.education > .col:after {
   content: "";
   position: absolute;
   width: 2px;
+  height: 100%;
   background-color: #F7F7FF;
   top: 0;
-  bottom: 0;
-  left: 40px;
-  margin: 131px 0px;
+  left: 51px;
+  margin: 2.5rem 0 0 0;
+}
+.positions > .col:last-child:after,
+.education > .col:last-child:after {
+  display: none;
 }
 
 ul li {
@@ -17134,15 +17116,15 @@ ul li {
   }
 }
 
-.work a,
+.jobs a,
 .education a {
   outline: 0;
   display: block;
-  font-size: 70%;
+  font-size: 30%;
 }
-.work img,
+.jobs img,
 .education img {
-  width: 8em;
+  width: 5rem;
   height: auto;
   display: block;
   background: #F7F7FF;
@@ -17151,12 +17133,17 @@ ul li {
   z-index: 10;
 }
 @media (max-width: 575.98px) {
-  .work img,
+  .jobs img,
   .education img {
     margin: 0 auto 15px auto;
   }
 }
 
+/*
+.heading {
+	// text-align: center;
+}
+*/
 @media (max-width: 575.98px) {
   .bio table {
     margin: 0 auto;

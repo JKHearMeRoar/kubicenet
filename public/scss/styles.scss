@@ -40,6 +40,7 @@ $primary: $celestial;
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
+
 /*
 $utilities: map-merge($utilities,
 		( // scss-docs-end utils-borders
@@ -143,8 +144,8 @@ a {
 	padding: 0.15em;
 	box-shadow:
 		0 0 2em 1em $primary,
-		0 0 3em 1.5em $violet,
-		0 0 4em 2em $green;
+		0 0 3em 2em $violet,
+		0 0 4em 3em $green;
 }
 
 a:hover {
@@ -155,6 +156,7 @@ a:hover {
 			0 0 4em 2em $green;
 	}
 }
+
 /*
 img {
 	&.round {
@@ -183,34 +185,6 @@ a:hover {
 	}
 }
 */
-.container {
-	// background-color: $ghost-white;
-	max-width: 960px;
-
-	.hello {
-		text-align: left;
-	}
-}
-
-#ajax-spinner {
-	margin: 15px 0 0 15px;
-	padding: 13px;
-	background: white url('../images/spinner.gif') no-repeat 50% 50%;
-	font-size: 0;
-	z-index: 123456;
-	display: none;
-}
-
-.scale:hover {
-	-webkit-transform: scale(1.05);
-	-ms-transform: scale(1.05);
-	transform: scale(1.05);
-	transition: all 0.5s;
-}
-
-
-
-
 
 .lang {
 	.flags {
@@ -376,21 +350,25 @@ body {
 }
 */
 
-.work,
-.education {
+.positions > .col,
+.education > .col {
 	position: relative;
-}
 
-.work:after,
-.education:after {
-	content: "";
-	position: absolute;
-	width: 2px;
-	background-color: $ghost-white;
-	top: 0;
-	bottom: 0;
-	left: 40px;
-	margin: 131px 0px;
+	&:after {
+		content: "";
+		position: absolute;
+		width: 2px;
+		height: 100%;
+		background-color: $ghost-white;
+		top: 0;
+		left: 51px;
+		margin: 2.5rem 0 0 0;
+	}
+
+	&:last-child:after {
+		display: none;
+	}
+
 }
 
 ul {
@@ -411,17 +389,17 @@ ul {
 // 	text-align: center;
 // }
 
-.work,
+.jobs,
 .education {
 
 	a {
 		outline: 0;
 		display: block;
-		font-size: 70%;
+		font-size: 30%;
 	}
 
 	img {
-		width: 8em;
+		width: 5rem;
 		height: auto;
 		display: block;
 		background: $ghost-white;
@@ -435,9 +413,11 @@ ul {
 	}
 }
 
+/*
 .heading {
 	// text-align: center;
 }
+*/
 
 .bio {
 
