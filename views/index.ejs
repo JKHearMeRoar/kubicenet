@@ -1,22 +1,4 @@
-<!DOCTYPE html>
-<html lang="<%=language %>">
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="/css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,700&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="/css/photoswipe.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<title>Jan Kubiče</title>
-</head>
-
-<body>
-	<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 		<symbol id="email" viewBox="6 6 20 20">
 			<path d="M16.006 6.5a.5.5 0 0 0-.049.002.5.5 0 0 0-.27.1L13.18 8.48H8.504v3.504l-1.697 1.272a.5.5 0 0 0-.29.637.5.5 0 0 0-.013.115v10.967a.5.5 0 0 0 .002.076.5.5 0 0 0 .02.097.5.5 0 0 0 .017.045.5.5 0 0 0 0 .002.5.5 0 0 0 .021.043.5.5 0 0 0 0 .002.5.5 0 0 0 .168.18.5.5 0 0 0 .002 0 .5.5 0 0 0 .041.025.5.5 0 0 0 .002 0 .5.5 0 0 0 .141.047.5.5 0 0 0 .002 0 .5.5 0 0 0 .047.006.5.5 0 0 0 .002 0 .5.5 0 0 0 .004 0 .5.5 0 0 0 .03.002.5.5 0 0 0 .015 0h17.88a.5.5 0 0 0 .606-.576V14.008a.5.5 0 0 0-.037-.197.5.5 0 0 0-.264-.538l-1.7-1.271V8.48H18.8L16.285 6.6a.5.5 0 0 0-.28-.1zm-.018 1.125 1.143.855h-2.283l1.14-.855zM9.504 9.48h13V14.674l-6.518 4.07-6.482-4.04V9.48zm3 .989v1.062h6.984V10.47h-6.984zm-1 2.031v1.063h9V12.5h-9zm-3 .734v.848l-.617-.385.617-.463zm15 .016.582.436-.582.363v-.799zm-10 1.25v1.063h5V14.5h-5zm11 .104v9.47l-5.217-3.486a.5.5 0 0 0-.283-.09v.002a.5.5 0 0 0-.274.92l4.614 3.08H8.654l4.62-3.08a.5.5 0 0 0-.288-.92.5.5 0 0 0-.267.088l-5.215 3.478v-9.431l1 .623 7.219 4.5.033.021h.006a.5.5 0 0 0 .002.002.5.5 0 0 0 .002 0 .5.5 0 0 0 .013.006.5.5 0 0 0 .076.027.5.5 0 0 0 .03.008.5.5 0 0 0 .02.004.5.5 0 0 0 .003 0 .5.5 0 0 0 .045.006.5.5 0 0 0 .006 0 .5.5 0 0 0 .123-.008.5.5 0 0 0 .02-.004.5.5 0 0 0 .095-.033.5.5 0 0 0 .016-.008h.006l.027-.017a.5.5 0 0 0 .006-.004l7.252-4.53 1-.624z" fill="currentColor"></path>
   		</symbol>
@@ -24,158 +6,158 @@
 			<path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z" fill="currentColor"></path>
   		</symbol>
 	</svg>
-	<div class="container">
-		<div class="bio section">
-			<div class="row heading align-items-center py-5">
-				<div class="col-xs-12 col-md-8 hello">
-					<h1>Jan Kubiče</h1>
-					<h2 class="border-start border-primary border-5 ps-2">Frontend Developer</h2>
-					<p>Jmenuji se Honza, je mi <span id="age">
-							<%= locals.age %>
-						</span>&nbsp;<%= locals.homepage.years %> a jsem frontend vývojář z Prahy. </p>
-					<div class="d-flex gap-2">
-						<a href="mailto:jan@kubice.net" class="btn p-0">
-							<!-- <img src="/images/email.svg" alt="Email icon"> -->
-							<svg xmlns="http://www.w3.org/2000/svg">
+<div class="container">
+	<div class="bio section">
+		<div class="row heading align-items-center py-5">
+			<div class="col-xs-12 col-md-8 hello">
+				<h1>Jan Kubiče</h1>
+				<h2 class="border-start border-primary border-5 ps-2">Frontend Developer</h2>
+				<p>Jmenuji se Honza, je mi <span id="age">
+						<%= locals.age %>
+					</span>&nbsp;<%= locals.strings.homepage.years %> a jsem frontend vývojář z Prahy. </p>
+				<div class="d-flex gap-2">
+					<a href="mailto:jan@kubice.net" class="btn p-0">
+						<!-- <img src="/images/email.svg" alt="Email icon"> -->
+						<svg xmlns="http://www.w3.org/2000/svg">
 								<title>Email icon</title>
 								<use xlink:href="#email"></use>
 							</svg>
-						</a>
-						<a href="https://www.linkedin.com/in/jan-kubice-09479370/" class="btn p-0">
-							<!-- <img src="/images/linkedin.svg" alt="LinkedIn icon"> -->
-							<svg xmlns="http://www.w3.org/2000/svg">
+					</a>
+					<a href="https://www.linkedin.com/in/jan-kubice-09479370/" class="btn p-0">
+						<!-- <img src="/images/linkedin.svg" alt="LinkedIn icon"> -->
+						<svg xmlns="http://www.w3.org/2000/svg">
 								<title>LinkedIn icon</title>
 								<use xlink:href="#linkedin"></use>
 							</svg>
-						</a>
-					</div>
+					</a>
+				</div>
 
-					<!-- <div>
+				<!-- <div>
 						<a href="/en/" class="btn btn-primary">
 							<img src="/images/english.svg" alt="English icon">
 						</a>
 					</div> -->
-				</div>
-				<div class="col-xs-12 col-md-4" id="my-gallery">
-					<a href="/images/jan_1024.jpg" data-pswp-width="1024" data-pswp-height="1023" target="_blank">
-						<img src="/images/jan_600.jpg" alt="Jan Kubiče fotka" width="300" height="300"
-							class="halo rounded-circle">
-					</a>
-				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-md-2 g-4">
-				<div class="col techstack">
-					<div class="row">
-						<div class="col">
-							<h3 class="mb-4">
-								Tech stack
-							</h3>
-							<div class="d-flex flex-wrap gap-2">
-								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
-									<img src="/images/html.svg" alt="HTML icon">
-									<span>HTML</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/css.svg" alt="CSS icon">
-									<span>CSS</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/javascript.svg" alt="JavaScript icon">
-									<span>JavaScript</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/sass.svg" class="h-5 w-5 md:w-7 md:h-7" alt="SASS icon">
-									<span>SASS</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/git.svg" alt="Git icon">
-									<span>Git</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/nodejs.svg" alt="Node.js icon">
-									<span>Node.js</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/bootstrap.svg" alt="Bootstrap icon">
-									<span>Bootstrap</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/jquery.svg" alt="jQuery icon">
-									<span>jQuery</span>
-								</div>
-								<div class="badge rounded-pill">
-									<img src="/images/php.svg" alt="PHP icon">
-									<span>PHP</span>
-								</div>
-								<!--
+			<div class="col-xs-12 col-md-4" id="my-gallery">
+				<a href="/images/jan_1024.jpg" data-pswp-width="1024" data-pswp-height="1023" target="_blank">
+					<img src="/images/jan_600.jpg" alt="Jan Kubiče fotka" width="300" height="300"
+						class="halo rounded-circle">
+				</a>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-md-2 g-4">
+			<div class="col techstack">
+				<div class="row">
+					<div class="col">
+						<h3 class="mb-4">
+							Tech stack
+						</h3>
+						<div class="d-flex flex-wrap gap-2">
+							<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+								<img src="/images/html.svg" alt="HTML icon">
+								<span>HTML</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/css.svg" alt="CSS icon">
+								<span>CSS</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/javascript.svg" alt="JavaScript icon">
+								<span>JavaScript</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/sass.svg" class="h-5 w-5 md:w-7 md:h-7" alt="SASS icon">
+								<span>SASS</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/git.svg" alt="Git icon">
+								<span>Git</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/nodejs.svg" alt="Node.js icon">
+								<span>Node.js</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/bootstrap.svg" alt="Bootstrap icon">
+								<span>Bootstrap</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/jquery.svg" alt="jQuery icon">
+								<span>jQuery</span>
+							</div>
+							<div class="badge rounded-pill">
+								<img src="/images/php.svg" alt="PHP icon">
+								<span>PHP</span>
+							</div>
+							<!--
 								<div class="badge rounded-pill">
 									<img src="/images/nette.png" alt="Nette icon" width="30" height="30">
 									<span>Nette</span>
 								</div>
 								-->
+						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col">
+						<h3 class="my-4">
+							<%= locals.homepage.languages %>
+						</h3>
+						<div class="d-flex flex-wrap gap-2">
+							<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+								<img src="/images/czech.svg" alt="Czech flag">
+								<span>Czech</span>
+							</div>
+							<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+								<img src="/images/english.svg" alt="English flag">
+								<span>English</span>
+							</div>
+							<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
+								<img src="/images/spanish.svg" alt="Spanish flag">
+								<span>Spanish</span>
 							</div>
 						</div>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col">
+						<h3 class="my-4">
+							<%= locals.homepage.education %>
+						</h3>
+
+						<div class="row row-cols-1 row-gap-4 education">
+							<div class="col d-flex align-items-start">
+								<a href="https://www.vse.cz/" class="flex-shrink-0 me-4"><img src="/images/vse.png"
+										alt="VŠE" width="125" height="125" class="rounded-circle"></a>
+								<div>
+									<h4>
+										<%= locals.homepage.vse %>
+									</h4>
+									<p>
+										<%= locals.homepage.faculty %><br>
+											2011 - 2017
+									</p>
+								</div>
+							</div>
+							<div class="col d-flex align-items-start">
+								<a href="https://www.gvp.cz/" class="flex-shrink-0 me-4"><img src="/images/gvp.png"
+										alt="GVP" width="125" height="125" class="rounded-circle"></a>
+								<div>
+									<h4>
+										<%= locals.homepage.grammarschool %> Na Vítězné pláni
+									</h4>
+									<p>2005 - 2011</p>
+								</div>
+							</div>
+						</div>
+
+
 
 					</div>
-					<div class="row">
-						<div class="col">
-							<h3 class="my-4">
-								<%= locals.homepage.languages %>
-							</h3>
-							<div class="d-flex flex-wrap gap-2">
-								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
-									<img src="/images/czech.svg" alt="Czech flag">
-									<span>Czech</span>
-								</div>
-								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
-									<img src="/images/english.svg" alt="English flag">
-									<span>English</span>
-								</div>
-								<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
-									<img src="/images/spanish.svg" alt="Spanish flag">
-									<span>Spanish</span>
-								</div>
-							</div>
-						</div>
 
-					</div>
-					<div class="row">
-						<div class="col">
-							<h3 class="my-4">
-								<%= locals.homepage.education %>
-							</h3>
-
-							<div class="row row-cols-1 row-gap-4 education">
-								<div class="col d-flex align-items-start">
-									<a href="https://www.vse.cz/" class="flex-shrink-0 me-4"><img src="/images/vse.png" alt="VŠE" width="125"
-											height="125" class="rounded-circle"></a>
-									<div>
-										<h4>
-											<%= locals.homepage.vse %>
-										</h4>
-										<p>
-											<%= locals.homepage.faculty %><br>
-												2011 - 2017
-										</p>
-									</div>
-								</div>
-								<div class="col d-flex align-items-start">
-									<a href="https://www.gvp.cz/" class="flex-shrink-0 me-4"><img src="/images/gvp.png" alt="GVP" width="125"
-											height="125" class="rounded-circle"></a>
-									<div>
-										<h4>
-											<%= locals.homepage.grammarschool %> Na Vítězné pláni
-										</h4>
-										<p>2005 - 2011</p>
-									</div>
-								</div>
-							</div>
-
-
-
-						</div>
-
-						<!--
+					<!--
 						<div class="row">
 							<h3>
 								<%= locals.homepage.languages %>
@@ -217,142 +199,135 @@
 							</table>
 						</div>
 						-->
-					</div>
-
 				</div>
-				<div class="col jobs">
-					<div class="row heading">
-						<div class="col-12">
-							<h3 class="mb-4">
-								<%= locals.homepage.jobs %>
-							</h3>
+
+			</div>
+			<div class="col jobs">
+				<div class="row heading">
+					<div class="col-12">
+						<h3 class="mb-4">
+							<%= locals.homepage.jobs %>
+						</h3>
+					</div>
+				</div>
+				<div class="row row-cols-1 row-gap-4 positions">
+					<div class="col d-flex align-items-start">
+						<a href="https://www.ebay.com/" class="flex-shrink-0 me-4">
+							<img src="/images/ebay.png" alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125"
+								class="rounded-circle"></a>
+						<div>
+							<h4>
+								<%= locals.homepage.ebay.developer %>
+							</h4>
+							<p>2019 - <%= locals.homepage.present %>
+							</p>
+							<ul>
+								<li>
+									<%= locals.homepage.ebay.transactional %>
+								</li>
+								<li>
+									<%= locals.homepage.ebay.testing %>
+								</li>
+								<li>
+									<%= locals.homepage.ebay.tools %>
+								</li>
+								<li>
+									<%= locals.homepage.ebay.automation %>
+								</li>
+								<li>
+									<%= locals.homepage.ebay.processes %>
+								</li>
+								<li>
+									<%= locals.homepage.ebay.training %>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<div class="row row-cols-1 row-gap-4 positions">
-						<div class="col d-flex align-items-start">
-							<a href="https://www.ebay.com/" class="flex-shrink-0 me-4">
-								<img src="/images/ebay.png" alt="<%= locals.homepage.ebay.ebay %>" width="125"
-									height="125" class="rounded-circle"></a>
-							<div>
-								<h4>
-									<%= locals.homepage.ebay.developer %>
-								</h4>
-								<p>2019 - <%= locals.homepage.present %>
-								</p>
-								<ul>
-									<li>
-										<%= locals.homepage.ebay.transactional %>
-									</li>
-									<li>
-										<%= locals.homepage.ebay.testing %>
-									</li>
-									<li>
-										<%= locals.homepage.ebay.tools %>
-									</li>
-									<li>
-										<%= locals.homepage.ebay.automation %>
-									</li>
-									<li>
-										<%= locals.homepage.ebay.processes %>
-									</li>
-									<li>
-										<%= locals.homepage.ebay.training %>
-									</li>
-								</ul>
-							</div>
+					<div class="col d-flex align-items-start">
+						<a href="https://www.conrad.cz/" class="flex-shrink-0 me-4">
+							<img src="/images/conrad.png" alt="<%= locals.homepage.conrad %>" width="125" height="125"
+								class="rounded-circle">
+						</a>
+						<div>
+							<h4>
+								<%= locals.homepage.marketing %>
+							</h4>
+							<p>2018 - 2019</p>
+							<ul>
+								<li>
+									<%= locals.homepage.conrad.coding %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.automation %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.segmentation %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.analysis %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.quality %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.copy %>
+								</li>
+								<li>
+									<%= locals.homepage.conrad.project %>
+								</li>
+							</ul>
 						</div>
-						<div class="col d-flex align-items-start">
-							<a href="https://www.conrad.cz/" class="flex-shrink-0 me-4">
-								<img src="/images/conrad.png" alt="<%= locals.homepage.conrad %>" width="125"
-									height="125" class="rounded-circle">
-							</a>
-							<div>
-								<h4>
-									<%= locals.homepage.marketing %>
-								</h4>
-								<p>2018 - 2019</p>
-								<ul>
-									<li>
-										<%= locals.homepage.conrad.coding %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.automation %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.segmentation %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.analysis %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.quality %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.copy %>
-									</li>
-									<li>
-										<%= locals.homepage.conrad.project %>
-									</li>
-								</ul>
-							</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<a href="https://smartselling.cz/" class="flex-shrink-0 me-4"><img
+								src="/images/smartselling.png" alt="<%= locals.homepage.smartselling %>" width="125"
+								height="125" class="rounded-circle"></a>
+						<div>
+							<h4>
+								<%= locals.homepage.marketing %>
+							</h4>
+							<p>2013 - 2018</p>
+							<ul>
+								<li>
+									<%= locals.homepage.smartselling.coding %>
+								</li>
+								<li>
+									<%= locals.homepage.smartselling.wordpress %>
+								</li>
+								<li>
+									<%= locals.homepage.smartselling.frontend %>
+								</li>
+								<li>
+									<%= locals.homepage.smartselling.techsupport %>
+								</li>
+								<li>
+									<%= locals.homepage.smartselling.training %>
+								</li>
+							</ul>
 						</div>
-						<div class="col d-flex align-items-start">
-							<a href="https://smartselling.cz/" class="flex-shrink-0 me-4"><img
-									src="/images/smartselling.png" alt="<%= locals.homepage.smartselling %>" width="125"
-									height="125" class="rounded-circle"></a>
-							<div>
-								<h4>
-									<%= locals.homepage.marketing %>
-								</h4>
-								<p>2013 - 2018</p>
-								<ul>
-									<li>
-										<%= locals.homepage.smartselling.coding %>
-									</li>
-									<li>
-										<%= locals.homepage.smartselling.wordpress %>
-									</li>
-									<li>
-										<%= locals.homepage.smartselling.frontend %>
-									</li>
-									<li>
-										<%= locals.homepage.smartselling.techsupport %>
-									</li>
-									<li>
-										<%= locals.homepage.smartselling.training %>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col d-flex align-items-start">
-							<a class="flex-shrink-0 me-4">
-								<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125"
-									height="125" class="rounded-circle">
-							</a>
-							<div>
-								<h4>
-									<%= locals.homepage.freelancer.freelancer %>
-								</h4>
-								<p>2012 - 2018</p>
-								<ul>
-									<li>
-										<%= locals.homepage.freelancer.dev %>
-									</li>
-									<li>
-										<%= locals.homepage.freelancer.email %>
-									</li>
-								</ul>
-							</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<a class="flex-shrink-0 me-4">
+							<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125"
+								height="125" class="rounded-circle">
+						</a>
+						<div>
+							<h4>
+								<%= locals.homepage.freelancer.freelancer %>
+							</h4>
+							<p>2012 - 2018</p>
+							<ul>
+								<li>
+									<%= locals.homepage.freelancer.dev %>
+								</li>
+								<li>
+									<%= locals.homepage.freelancer.email %>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<script src="/js/photoswipe.js" type="module"></script>
-	<script src="/js/main.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+</div>
