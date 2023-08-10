@@ -19,14 +19,14 @@
 					<a href="mailto:jan@kubice.net" class="btn p-0">
 						<!-- <img src="/images/email.svg" alt="Email icon"> -->
 						<svg xmlns="http://www.w3.org/2000/svg">
-								<title>Email icon</title>
+								<title>Email me</title>
 								<use xlink:href="#email"></use>
 							</svg>
 					</a>
 					<a href="https://www.linkedin.com/in/jan-kubice-09479370/" class="btn p-0">
 						<!-- <img src="/images/linkedin.svg" alt="LinkedIn icon"> -->
 						<svg xmlns="http://www.w3.org/2000/svg">
-								<title>LinkedIn icon</title>
+								<title>LinkedIn profile</title>
 								<use xlink:href="#linkedin"></use>
 							</svg>
 					</a>
@@ -45,7 +45,7 @@
 				</a>
 			</div>
 		</div>
-		<div class="row row-cols-1 row-cols-md-2 g-4">
+		<div class="row row-cols-1 row-cols-md-2 g-5">
 			<div class="col techstack">
 				<div class="row">
 					<div class="col">
@@ -102,7 +102,7 @@
 				<div class="row">
 					<div class="col">
 						<h3 class="my-4">
-							<%= locals.homepage.languages %>
+							<%= locals.strings.homepage.languages %>
 						</h3>
 						<div class="d-flex flex-wrap gap-2">
 							<div class="badge rounded-pill flex-grow-1 flex-shrink-1">
@@ -124,7 +124,7 @@
 				<div class="row">
 					<div class="col">
 						<h3 class="my-4">
-							<%= locals.homepage.education %>
+							<%= locals.strings.homepage.education %>
 						</h3>
 
 						<div class="row row-cols-1 row-gap-4 education">
@@ -133,10 +133,10 @@
 										alt="VŠE" width="125" height="125" class="rounded-circle"></a>
 								<div>
 									<h4>
-										<%= locals.homepage.vse %>
+										<%= locals.strings.homepage.vse %>
 									</h4>
 									<p>
-										<%= locals.homepage.faculty %><br>
+										<%= locals.strings.homepage.faculty %><br>
 											2011 - 2017
 									</p>
 								</div>
@@ -146,7 +146,7 @@
 										alt="GVP" width="125" height="125" class="rounded-circle"></a>
 								<div>
 									<h4>
-										<%= locals.homepage.grammarschool %> Na Vítězné pláni
+										<%= locals.strings.homepage.grammarschool %> Na Vítězné pláni
 									</h4>
 									<p>2005 - 2011</p>
 								</div>
@@ -160,7 +160,7 @@
 					<!--
 						<div class="row">
 							<h3>
-								<%= locals.homepage.languages %>
+								<%= locals.strings.homepage.languages %>
 							</h3>
 							<table>
 								<tr>
@@ -176,7 +176,7 @@
 								</tr>
 								<tr>
 									<th>
-										<%= locals.homepage.english %>
+										<%= locals.strings.homepage.english %>
 									</th>
 									<td>
 										<div class="progress mb-3" role="progressbar" aria-label="English"
@@ -187,7 +187,7 @@
 								</tr>
 								<tr>
 									<th>
-										<%= locals.homepage.spanish %>
+										<%= locals.strings.homepage.spanish %>
 									</th>
 									<td>
 										<div class="progress mb-3" role="progressbar" aria-label="English"
@@ -206,122 +206,122 @@
 				<div class="row heading">
 					<div class="col-12">
 						<h3 class="mb-4">
-							<%= locals.homepage.jobs %>
+							<%= locals.strings.homepage.jobs %>
 						</h3>
 					</div>
 				</div>
 				<div class="row row-cols-1 row-gap-4 positions">
 					<div class="col d-flex align-items-start">
 						<a href="https://www.ebay.com/" class="flex-shrink-0 me-4">
-							<img src="/images/ebay.png" alt="<%= locals.homepage.ebay.ebay %>" width="125" height="125"
+							<img src="/images/ebay.png" alt="<%= locals.strings.homepage.ebay.ebay %>" width="125" height="125"
 								class="rounded-circle"></a>
 						<div>
 							<h4>
-								<%= locals.homepage.ebay.developer %>
+								<%= locals.strings.homepage.ebay.developer %>
 							</h4>
-							<p>2019 - <%= locals.homepage.present %>
+							<p>2019 - <%= locals.strings.homepage.present %>
 							</p>
 							<ul>
 								<li>
-									<%= locals.homepage.ebay.transactional %>
+									<%= locals.strings.homepage.ebay.transactional %>
 								</li>
 								<li>
-									<%= locals.homepage.ebay.testing %>
+									<%= locals.strings.homepage.ebay.testing %>
 								</li>
 								<li>
-									<%= locals.homepage.ebay.tools %>
+									<%= locals.strings.homepage.ebay.tools %>
 								</li>
 								<li>
-									<%= locals.homepage.ebay.automation %>
+									<%= locals.strings.homepage.ebay.automation %>
 								</li>
 								<li>
-									<%= locals.homepage.ebay.processes %>
+									<%= locals.strings.homepage.ebay.processes %>
 								</li>
 								<li>
-									<%= locals.homepage.ebay.training %>
+									<%= locals.strings.homepage.ebay.training %>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col d-flex align-items-start">
 						<a href="https://www.conrad.cz/" class="flex-shrink-0 me-4">
-							<img src="/images/conrad.png" alt="<%= locals.homepage.conrad %>" width="125" height="125"
+							<img src="/images/conrad.png" alt="<%= locals.strings.homepage.conrad %>" width="125" height="125"
 								class="rounded-circle">
 						</a>
 						<div>
 							<h4>
-								<%= locals.homepage.marketing %>
+								<%= locals.strings.homepage.marketing %>
 							</h4>
 							<p>2018 - 2019</p>
 							<ul>
 								<li>
-									<%= locals.homepage.conrad.coding %>
+									<%= locals.strings.homepage.conrad.coding %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.automation %>
+									<%= locals.strings.homepage.conrad.automation %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.segmentation %>
+									<%= locals.strings.homepage.conrad.segmentation %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.analysis %>
+									<%= locals.strings.homepage.conrad.analysis %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.quality %>
+									<%= locals.strings.homepage.conrad.quality %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.copy %>
+									<%= locals.strings.homepage.conrad.copy %>
 								</li>
 								<li>
-									<%= locals.homepage.conrad.project %>
+									<%= locals.strings.homepage.conrad.project %>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col d-flex align-items-start">
 						<a href="https://smartselling.cz/" class="flex-shrink-0 me-4"><img
-								src="/images/smartselling.png" alt="<%= locals.homepage.smartselling %>" width="125"
+								src="/images/smartselling.png" alt="<%= locals.strings.homepage.smartselling %>" width="125"
 								height="125" class="rounded-circle"></a>
 						<div>
 							<h4>
-								<%= locals.homepage.marketing %>
+								<%= locals.strings.homepage.marketing %>
 							</h4>
 							<p>2013 - 2018</p>
 							<ul>
 								<li>
-									<%= locals.homepage.smartselling.coding %>
+									<%= locals.strings.homepage.smartselling.coding %>
 								</li>
 								<li>
-									<%= locals.homepage.smartselling.wordpress %>
+									<%= locals.strings.homepage.smartselling.wordpress %>
 								</li>
 								<li>
-									<%= locals.homepage.smartselling.frontend %>
+									<%= locals.strings.homepage.smartselling.frontend %>
 								</li>
 								<li>
-									<%= locals.homepage.smartselling.techsupport %>
+									<%= locals.strings.homepage.smartselling.techsupport %>
 								</li>
 								<li>
-									<%= locals.homepage.smartselling.training %>
+									<%= locals.strings.homepage.smartselling.training %>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col d-flex align-items-start">
 						<a class="flex-shrink-0 me-4">
-							<img src="/images/freelancer.png" alt="<%= locals.homepage.freelancer %>" width="125"
+							<img src="/images/freelancer.png" alt="<%= locals.strings.homepage.freelancer %>" width="125"
 								height="125" class="rounded-circle">
 						</a>
 						<div>
 							<h4>
-								<%= locals.homepage.freelancer.freelancer %>
+								<%= locals.strings.homepage.freelancer.freelancer %>
 							</h4>
 							<p>2012 - 2018</p>
 							<ul>
 								<li>
-									<%= locals.homepage.freelancer.dev %>
+									<%= locals.strings.homepage.freelancer.dev %>
 								</li>
 								<li>
-									<%= locals.homepage.freelancer.email %>
+									<%= locals.strings.homepage.freelancer.email %>
 								</li>
 							</ul>
 						</div>

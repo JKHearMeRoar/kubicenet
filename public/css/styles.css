@@ -16917,6 +16917,11 @@ a:hover .halo {
   box-shadow: 0 0 3em 1.5em #F7F7FF, 0 0 3em 1.5em #6761A8, 0 0 4em 2em #009B72;
 }
 
+header img {
+  width: 2rem;
+  height: auto;
+}
+
 /*
 img {
 	&.round {

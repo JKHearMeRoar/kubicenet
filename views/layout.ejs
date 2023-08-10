@@ -12,10 +12,17 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-	<title><%= page %> | Jan Kubiče</title>
+	<title>Jan Kubiče</title>
 </head>
 
-<body>
+<body class="<%=language %>">
+	<header>
+		<div class="container">
+			<a href="/en/" class="btn">
+				<img src="/images/english.svg" alt="English icon">
+			</a>
+		</div>
+	</header>
 
 	<%- body %>
 

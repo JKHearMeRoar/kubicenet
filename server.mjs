@@ -26,9 +26,8 @@ app.use((req, res, next) => {
 	// Detect user's preferred language (you can implement your own logic here)
 	const browserLanguage = req.headers['accept-language'].split(',')[0].trim();
 	// Set the language based on the user's preference
-	req.language = browserLanguage;
-	console.log(req.language);
-	req.strings = languageStrings[browserLanguage];
+	res.locals.language = browserLanguage;
+	res.locals.strings = languageStrings[browserLanguage];
 	// console.log(req.language);
 	// app.locals.language = preferredLanguage;
 
@@ -37,10 +36,23 @@ app.use((req, res, next) => {
 
 app.use((req, res, next) => {
 	const age = calculateAge("1991-08-13")
-	req.age = age;
+	res.locals.age = age;
 	// console.log(age);
 	next();
 });
+/*
+app.use((req, res, next) => {
+
+	console.log(req.language);
+	req.locals = {
+		language: req.language,
+		strings: req.strings,
+		age: req.age
+	}
+
+	next();
+});
+*/
 
 app.use('/js', express.static('./node_modules/bootstrap/dist/js'));
 
