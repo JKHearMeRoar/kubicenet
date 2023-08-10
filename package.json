@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel dev watch",
-    "dev": "nodemon server.mjs",
+    "dev": "supervisor server.mjs",
     "prod": "node server.mjs",
-    "watch": "nodemon -e html,scss -x \"npm run css\"",
+    "watch": "nodemon -e html,ejs,scss -x npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules public/scss/:public/css/",
     "css-compile-dev": "sass --source-map --embed-sources --no-error-css --load-path=node_modules public/scss/:public/css/",
     "css-prefix": "postcss --replace public/css/styles.css --use autoprefixer --map",
