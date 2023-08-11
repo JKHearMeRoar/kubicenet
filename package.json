@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel dev watch",
-    "dev": "supervisor server.mjs",
+    "start": "supervisor server.mjs",
+    "dev": "npm-run-all --parallel start watch",
     "prod": "node server.mjs",
     "watch": "nodemon -e html,ejs,scss -x npm run css",
     "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules public/scss/:public/css/",

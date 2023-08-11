@@ -10,15 +10,9 @@ $gray: #495867;
 $blue: #577399;
 $light-blue: #BDD5EA;
 $ghost-white: #F7F7FF;
-// $orange: #FE5F55;
-// $black: #000000;
 $light-gray: #777;
 
 $black: #02010A;
-$oxford: #04052E;
-$federal: #140152;
-$navy: #22007C;
-$duke: #0D00A4;
 $lighter-gray2: #e9e9e9;
 
 
@@ -31,7 +25,6 @@ $badge-padding-x: 1em;
 $badge-padding-y: 0.5em;
 
 $body-color: $ghost-white;
-// $body-bg: $black;
 $body-bg: $gunmetal;
 $primary: $celestial;
 
@@ -40,22 +33,6 @@ $primary: $celestial;
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
-
-/*
-$utilities: map-merge($utilities,
-		( // scss-docs-end utils-borders
-			// Sizing utilities
-			// scss-docs-start utils-sizing
-			"width": (property: width,
-				class: w,
-				values: (25: 25%,
-					30: 30%,
-					50: 50%,
-					75: 75%,
-					90: 90%,
-					100: 100%,
-					auto: auto))));
-*/
 @import "bootstrap/scss/utilities/api";
 @import "bootstrap/scss/bootstrap";
 
@@ -82,21 +59,33 @@ header {
 	}
 }
 
+body {
+	&.cs {
+		.czech {
+			display: none;
+		}
+	}
+
+	&.en {
+		.english {
+			display: none;
+		}
+	}
+}
+
 .badge {
 	border: 1px solid $ghost-white;
-	flex: 1 1 0px;
-	// margin-bottom: 10px;
+	flex: 1 1 10rem;
+	transition: all 0.5s;
 
 	img {
-		// fill: $ghost-white;
 		height: 2rem;
 		width: 2rem;
+		margin-right: 0.5rem;
 	}
 
 	&:hover {
-		img {
-			fill: $blue;
-		}
+		background-color: $primary;
 	}
 }
 
@@ -106,6 +95,7 @@ header {
 			width: 2rem;
 			height: 2rem;
 			color: $ghost-white;
+			transition: all 0.5s;
 		}
 
 		&:hover {
@@ -127,7 +117,6 @@ h4 {
 
 h1,
 h2 {
-	// text-align: center;
 	margin-bottom: 10px;
 }
 
@@ -176,202 +165,42 @@ a:hover {
 	}
 }
 
-
-/*
-img {
-	&.round {
-		border-radius: 50%;
-		padding: 3px;
-		border: 3px solid $oxford;
-
-		box-shadow:
-			0 0 60px 30px $duke,
-			0 0 100px 60px $navy,
-			0 0 140px 90px $federal;
-	}
-}
-
-a:hover {
-	img {
-		&.round {
-			// border-color: $ghost-white;
-			// transition: all 0.5s;
-			transition: all 1s;
-			box-shadow:
-				0 0 60px 30px $ghost-white,
-				0 0 100px 60px $navy,
-				0 0 140px 90px $federal;
-		}
-	}
-}
-*/
-
-.lang {
-	.flags {
-		padding: 0 0 5px 0;
-		display: flex;
-		justify-content: flex-start;
-	}
-}
-
-body {
-	&.cs {
-		.czech {
-			display: none;
-		}
-	}
-
-	&.en {
-		.english {
-			display: none;
-		}
-	}
-}
-
-// Menu
-
-.header {
-	background: white;
-	border-top: 5px solid $lighter-gray2;
-	border-bottom: 1px solid $lighter-gray2;
-}
-
-#logo {
-	display: flex;
-
-	@include media-breakpoint-down(sm) {
-		justify-content: center;
-		padding: 20px 0px 10px 0px;
-	}
+.jobs,
+.education {
 
 	a {
-		display: inline-block;
-		margin: auto 0;
-	}
-}
-
-#menu {
-
-	@include media-breakpoint-down(sm) {
-		text-align: center;
-	}
-
-	ul.nav {
+		outline: 0;
 		display: block;
-		float: right;
+		font-size: 30%;
+
+		&:hover {
+			img {
+				box-shadow:
+					0 0 3em 1.5em $ghost-white,
+					0 0 3em 1.5em $violet,
+					0 0 4em 2em $green;
+			}
+		}
+	}
+
+	img {
+		width: 5rem;
+		height: auto;
+		display: block;
+		background: $ghost-white;
+		padding: 5px;
+		position: relative;
+		z-index: 10;
+		transition: all 1s;
 
 		@include media-breakpoint-down(sm) {
-			display: inline-block;
-			float: none;
-		}
-
-		li {
-			float: left;
-			position: relative;
-			list-style: none;
-
-			&.current {
-
-				a {
-					color: $blue;
-
-					&:before,
-					&:after {
-						background: $blue;
-						opacity: 1;
-					}
-				}
-
-				&:before {
-					position: absolute;
-					top: -3px;
-					background: $blue;
-					left: 50%;
-					content: '';
-					display: block;
-					width: 7px;
-					height: 7px;
-					margin: 0 0 0 -4px;
-					transform: rotate(45deg);
-
-					@include media-breakpoint-down(sm) {
-						display: none;
-					}
-				}
-			}
-
-			a {
-				display: inline-block;
-				padding: 25px 25px 25px;
-				color: $gray;
-				font-weight: 700;
-				font-size: 14px;
-				line-height: 1.7;
-				text-transform: uppercase;
-				text-decoration: none;
-
-				&:before {
-					position: absolute;
-					content: "";
-					width: 100%;
-					height: 5px;
-					top: -5px;
-					left: 0;
-					opacity: 0;
-				}
-
-				&:after {
-					position: absolute;
-					content: "";
-					width: 100%;
-					height: 1px;
-					bottom: -1px;
-					left: 0;
-					opacity: 0;
-				}
-
-				&:hover,
-				&:active {
-					color: $blue;
-
-					&:before,
-					&:after {
-						background: $blue;
-						opacity: 1;
-
-						@include media-breakpoint-down(sm) {
-							opacity: 0;
-						}
-					}
-				}
-
-				@include media-breakpoint-down(sm) {
-					text-decoration: underline;
-					padding: 10px 20px;
-				}
-			}
+			margin: 0 auto 15px auto;
 		}
 	}
 }
 
-/*
-.progress-bar {
-	width: 100%;
-	height: 20px;
-	background-color: $light-gray;
-	border-radius: 5px;
-	overflow: hidden;
-}
-
-.progress-bar-fill {
-	height: 100%;
-	background-color: $light-blue;
-	transition: width 0.3s ease-in-out;
-}
-*/
-
-.positions > .col,
-.education > .col {
+.positions>.col,
+.education>.col {
 	position: relative;
 
 	&:after {
@@ -398,61 +227,8 @@ ul {
 		background: url('../images/check.png') no-repeat 0% 50%;
 
 		@include media-breakpoint-down(sm) {
-			// display: inline-block;
 			padding: 0;
 			background: transparent;
 		}
-	}
-}
-
-// @include media-breakpoint-down(sm) {
-// 	text-align: center;
-// }
-
-.jobs,
-.education {
-
-	a {
-		outline: 0;
-		display: block;
-		font-size: 30%;
-	}
-
-	img {
-		width: 5rem;
-		height: auto;
-		display: block;
-		background: $ghost-white;
-		padding: 5px;
-		position: relative;
-		z-index: 10;
-
-		@include media-breakpoint-down(sm) {
-			margin: 0 auto 15px auto;
-		}
-	}
-}
-
-/*
-.heading {
-	// text-align: center;
-}
-*/
-
-.bio {
-
-	table {
-		@include media-breakpoint-down(sm) {
-			margin: 0 auto;
-		}
-	}
-
-	th {
-		font-weight: 400;
-		padding-right: 15px;
-	}
-
-	td {
-		padding: 2px 8px;
 	}
 }

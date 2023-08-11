@@ -3,7 +3,6 @@ import morgan from 'morgan'
 import expressLayouts from 'express-ejs-layouts'
 import languageStrings from './languages.json' assert { type: 'json' }
 import indexRouter from './routes/index.mjs'
-// import enRouter from './routes/en.js'
 const app = express()
 
 // app.use(morgan('dev'))
@@ -23,36 +22,24 @@ function calculateAge(birthday) {
 }
 
 app.use((req, res, next) => {
-	// Detect user's preferred language (you can implement your own logic here)
+	// Detect user's preferred language from Browser
 	const browserLanguage = req.headers['accept-language'].split(',')[0].trim();
+	// Default to EN
+	if(browserLanguage != "cs-CZ") {
+		browserLanguage = "en";
+	}
 	// Set the language based on the user's preference
 	res.locals.language = browserLanguage;
 	res.locals.strings = languageStrings[browserLanguage];
-	// console.log(req.language);
-	// app.locals.language = preferredLanguage;
-
 	next();
 });
 
 app.use((req, res, next) => {
+	// Calculate Jan's age
 	const age = calculateAge("1991-08-13")
 	res.locals.age = age;
-	// console.log(age);
 	next();
 });
-/*
-app.use((req, res, next) => {
-
-	console.log(req.language);
-	req.locals = {
-		language: req.language,
-		strings: req.strings,
-		age: req.age
-	}
-
-	next();
-});
-*/
 
 app.use('/js', express.static('./node_modules/bootstrap/dist/js'));
 
@@ -66,19 +53,6 @@ app.use((req, res, next) => {
 	res.status(404).render('404', { page: 'Page not found' });
 });
 
-/*
-
-app.get('/', (req, res) => {
-	const language = req.language || 'en'; // Default to English if language is not set
-	const strings = languageStrings[language];
-	const age = calculateAge("1991-08-13")
-	res.render('the-view', { language: language, ...strings, age });
-	});
-*/
-// app.use("/en", enRouter)
-
 const port = process.env.PORT || 3000;
 app.set('port', port);
-app.listen(port, () => {
-	//console.log(`Server is running on port ${port}`);
-});
+app.listen(port, () => {});
