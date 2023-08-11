@@ -61,6 +61,25 @@ $utilities: map-merge($utilities,
 
 body {
 	font-family: 'Exo 2', sans-serif;
+
+	&.cs-CZ {
+		header .cz {
+			display: none;
+		}
+	}
+
+	&.en {
+		header .en {
+			display: none;
+		}
+	}
+}
+
+header {
+	img {
+		width: 2rem;
+		height: auto;
+	}
 }
 
 .badge {
@@ -157,12 +176,6 @@ a:hover {
 	}
 }
 
-header {
-	img {
-		width: 2rem;
-		height: auto;
-	}
-}
 
 /*
 img {

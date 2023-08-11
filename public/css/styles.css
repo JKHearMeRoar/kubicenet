@@ -16843,6 +16843,17 @@ textarea.form-control-lg {
 body {
   font-family: "Exo 2", sans-serif;
 }
+body.cs-CZ header .cz {
+  display: none;
+}
+body.en header .en {
+  display: none;
+}
+
+header img {
+  width: 2rem;
+  height: auto;
+}
 
 .badge {
   border: 1px solid #F7F7FF;
@@ -16915,11 +16926,6 @@ a:hover {
 
 a:hover .halo {
   box-shadow: 0 0 3em 1.5em #F7F7FF, 0 0 3em 1.5em #6761A8, 0 0 4em 2em #009B72;
-}
-
-header img {
-  width: 2rem;
-  height: auto;
 }
 
 /*
