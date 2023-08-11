@@ -16871,6 +16871,7 @@ header img {
   width: 2rem;
   height: 2rem;
   color: #F7F7FF;
+  transition: all 0.5s;
 }
 .hello .btn:hover svg {
   color: #009DDC;
@@ -16925,6 +16926,16 @@ a:hover {
 }
 
 a:hover .halo {
+  box-shadow: 0 0 3em 1.5em #F7F7FF, 0 0 3em 1.5em #6761A8, 0 0 4em 2em #009B72;
+}
+
+.jobs a img,
+.education a img {
+  transition: all 1s;
+}
+
+.jobs a:hover img,
+.education a:hover img {
   box-shadow: 0 0 3em 1.5em #F7F7FF, 0 0 3em 1.5em #6761A8, 0 0 4em 2em #009B72;
 }
 

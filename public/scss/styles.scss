@@ -106,6 +106,7 @@ header {
 			width: 2rem;
 			height: 2rem;
 			color: $ghost-white;
+			transition: all 0.5s;
 		}
 
 		&:hover {
@@ -174,6 +175,19 @@ a:hover {
 			0 0 3em 1.5em $violet,
 			0 0 4em 2em $green;
 	}
+}
+
+.jobs a img,
+.education a img {
+	transition: all 1s;
+}
+
+.jobs a:hover img,
+.education a:hover img {
+	box-shadow:
+		0 0 3em 1.5em $ghost-white,
+		0 0 3em 1.5em $violet,
+		0 0 4em 2em $green;
 }
 
 
@@ -370,8 +384,8 @@ body {
 }
 */
 
-.positions > .col,
-.education > .col {
+.positions>.col,
+.education>.col {
 	position: relative;
 
 	&:after {
